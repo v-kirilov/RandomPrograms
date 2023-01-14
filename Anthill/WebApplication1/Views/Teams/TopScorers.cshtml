@@ -1,0 +1,46 @@
+﻿@using WebApplication1.Models
+@model List<TopScorersSP>
+	@section Scripts
+{
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        	$('#example').DataTable();
+        });
+	</script>
+}
+<body>
+<h1>Most points scored:</h1>
+
+
+		<table id="example" class="table table-striped table-bordered" style="width:100%">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Total Points Scored</th>
+		
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var team in this.Model)
+			{
+				<tr>
+					<td>@team.TeamId</td>
+					<td>@team.TeamName</td>
+					<td>@team.TotalScore</td>
+				</tr>
+			}
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Total Points Scored</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
