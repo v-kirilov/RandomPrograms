@@ -1,0 +1,1 @@
+An app using AJAX to fetch data.
