@@ -18,7 +18,7 @@ namespace TCPData
                 LastName = "Jones",
                 AnnualSalary = 60000.1m,
                 IsManager = true,
-                Department = 1
+                DepartmentId = 1
             };
             employees.Add(employee);
             employee = new()
@@ -28,7 +28,7 @@ namespace TCPData
                 LastName = "Jameson",
                 AnnualSalary = 80000.1m,
                 IsManager = true,
-                Department = 2
+                DepartmentId = 2
             };
             employees.Add(employee);
 
@@ -39,7 +39,7 @@ namespace TCPData
                 LastName = "Roberts",
                 AnnualSalary = 40000.2m,
                 IsManager = false,
-                Department = 2
+                DepartmentId = 2
             };
             employees.Add(employee);
 
@@ -50,7 +50,7 @@ namespace TCPData
                 LastName = "Stevens",
                 AnnualSalary = 30000.3m,
                 IsManager = false,
-                Department = 3
+                DepartmentId = 3
             };
             employees.Add(employee);
 

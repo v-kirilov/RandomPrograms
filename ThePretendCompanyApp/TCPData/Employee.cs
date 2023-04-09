@@ -14,6 +14,6 @@ namespace TCPData
         public string LastName { get; set; }
         public decimal AnnualSalary { get; set; }
         public bool IsManager { get; set; }
-        public int Department { get; set; }
+        public int DepartmentId { get; set; }
     }
 }
