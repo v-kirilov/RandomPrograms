@@ -1,0 +1,1 @@
+A script for searching for a certain file in "ProgramData" folder, scanning the file for a certain key and if it is missing than adds it.

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSearchApp", "FileSearchApp\FileSearchApp.csproj", "{C783B1ED-4D54-4C8D-8C30-DB7B3C32F22E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C783B1ED-4D54-4C8D-8C30-DB7B3C32F22E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C783B1ED-4D54-4C8D-8C30-DB7B3C32F22E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C783B1ED-4D54-4C8D-8C30-DB7B3C32F22E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C783B1ED-4D54-4C8D-8C30-DB7B3C32F22E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88C613F5-90AD-4D94-841F-7E531A0BD0F0}
+	EndGlobalSection
+EndGlobal
