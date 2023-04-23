@@ -16,8 +16,6 @@ internal class Program
     private static readonly IFileRepository fileRepository;
     private static void Main(string[] args)
     {
-        Stopwatch stopWatch = new();
-        stopWatch.Start();
         var builder = new ConfigurationBuilder();
         BuildConfig(builder);
 
@@ -30,15 +28,22 @@ internal class Program
                 services.AddScoped<IFileRepository, FileRepository>();
             })
             .Build();
+
         var dbBootStrap = ActivatorUtilities.CreateInstance<DatabaseBootstrap>(host.Services);
         dbBootStrap.Setup();
+
         IFileRepository fileRepo = ActivatorUtilities.CreateInstance<FileRepository>(host.Services);
 
-        string location = Console.ReadLine();
+        //string location = Console.ReadLine();
+        string location = @"c:\test";
+
+        Stopwatch stopWatch = new();
+        stopWatch.Start();
 
         TransverseDirectory(location, fileRepo);
 
         stopWatch.Stop();
+        Console.WriteLine(stopWatch.Elapsed);
     }
 
     private static void TransverseDirectory(string? location, IFileRepository fileRepo)
